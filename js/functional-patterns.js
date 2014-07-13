@@ -92,7 +92,7 @@ FunctionalPatterns.prototype.memoize = function(func) {
     var previousResults = {};
 
     var memoizedFunc = function(arg) {
-        if (isNaN(arg)) {
+        if (arg === undefined  || isNaN(arg)) {
             return;
         }
         if (arg in previousResults) {
