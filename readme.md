@@ -1,0 +1,1 @@
+### Demo [Functional Programming Patterns](http://AndreyIgn.github.io/JavaScript-Advanced/)
