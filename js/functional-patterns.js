@@ -83,7 +83,7 @@ FunctionalPatterns.prototype.lazy = function(func) {
     var slice = Array.prototype.slice;
     var args = slice.call(arguments, 1);
     var lazyFunc = function() {
-        return func(args);
+        return func.apply(this, args);
     };
     return lazyFunc;
 };
